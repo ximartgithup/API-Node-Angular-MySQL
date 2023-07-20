@@ -1,0 +1,32 @@
+<form action="">
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Nombres</label>
+    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre" [(ngModel)]="cliente.nombres" required>
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Apellidos</label>
+    <input type="text" class="form-control" id="apellidos" name="apellidos"  placeholder="apellidos" [(ngModel)]="cliente.apellidos" required>
+</div>
+
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Direccion</label>
+    <input type="text" class="form-control" id="direccion" name="direccion"  placeholder="direccion" [(ngModel)]="cliente.direccion" required>
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Telefono</label>
+    <input type="text" class="form-control" id="telefono" name="telefono"  placeholder="telefono" [(ngModel)]="cliente.telefono" required>
+</div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="email" name="email"  placeholder="email" [(ngModel)]="cliente.email" required>
+</div>
+<div class="row g-0 text-center">
+    <div class="col-sm-6 col-md-6">
+        <button type="button" class="btn btn-primary" (click)="guardarCliente()">Guardar</button>
+    </div>
+    <div class="col-6 col-md-6">
+        <button type="button" class="btn btn-danger" (click)="listarCliente()">cancelar</button>
+    </div>
+</div>
+
+</form>
